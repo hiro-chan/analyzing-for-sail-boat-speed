@@ -29,5 +29,13 @@ Intentって何？⇒
 Androidにある強力なAPIのことよ。
 Intentを用いることで、異なったActivity間でデータ(文字列や数値など)を受け渡すことが可能よ。
 MainActivity から SubActivity への遷移は⇒
+
 Intent intent = new Intent(getApplication(), SubActivity.class);
 startActivity(intent);
+
+よ！
+
+/
+openFileOutputの第二引数は
+
+openFileOutput("test.txt", Context.MODE_PRIVATE)
