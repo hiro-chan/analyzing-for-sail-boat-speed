@@ -20,3 +20,14 @@ protected void onCreate(Bundle savedInstanceState) {
 @Overrideって何？？？⇒
 「スーパークラスのメソッドをサブクラスで書きなおすこと」をオーバーライドという。
 ずばり@Overrideとは、「このメソッドはオーバーライドしているよ」という注釈なのだ。
+
+/
+AppCompatActivityクラスって何？⇒
+まぁ、MainActivityクラスの今流行の継承元と思っておいていいよ。
+/
+Intentって何？⇒
+Androidにある強力なAPIのことよ。
+Intentを用いることで、異なったActivity間でデータ(文字列や数値など)を受け渡すことが可能よ。
+MainActivity から SubActivity への遷移は⇒
+Intent intent = new Intent(getApplication(), SubActivity.class);
+startActivity(intent);
