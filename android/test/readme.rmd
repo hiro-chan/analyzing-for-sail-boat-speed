@@ -1,2 +1,22 @@
 I can not write contents of a file into screen ?
 What should I do?
+
+/
+onCreate でActivityが初めて生成され、Activityの初期化は全てここに書く。つまり全て初期化される。
+/
+一般的にBundleは、androidのさまざまなAcrivity間でデータをパスするときに使います。 
+どんなタイプの値をパスするかによりますが、bundleは全てのタイプの値を保持し新しいactivityにパスします。
+/
+Javaで親クラスの変数やメソッドに子クラスからアクセスしたいと思ったことはありませんか？
+そんなときは、「super」を使えば子クラスから親クラスの変数やメソッドを参照することができます！
+/
+以下はおまじないみたいなもんよ。Activityつくるときにでてくるよー
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_a);
+}
+/
+@Overrideって何？？？⇒
+「スーパークラスのメソッドをサブクラスで書きなおすこと」をオーバーライドという。
+ずばり@Overrideとは、「このメソッドはオーバーライドしているよ」という注釈なのだ。
