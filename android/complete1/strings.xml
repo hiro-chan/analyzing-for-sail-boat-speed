@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">socket-chan</string>
+    <string name="main">MainActivity</string>
+    <string name="send_button">SEND</string>
+    <string name="text_view2">Sub Activity</string>
+    <string name="return_sub">RETURN</string>
+    <string name="read_error">READ_ERROR</string>
+
+</resources>
